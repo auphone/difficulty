@@ -56,8 +56,6 @@ Difficulty.create(options)
 
 #### filepath
 Path to your csv file, in following format.
-
-**Format:**
 ```sh
 "Word","Freq_HAL"
 "a","10610626"
@@ -65,24 +63,28 @@ Path to your csv file, in following format.
 ```
 Default: `./node_modules/difficulty/wordlist/wordlist.csv`
 
+
 #### levelsThreshold
 Define your own levels with frequency threshold in descending order.
+
 Default: `[20000, 10000, 5000]`
 
-Default threshold contains 4 level.
-
+```sh
 - Level 0: freq > 20000
 - Level 1: 10001 to 20000
 - Level 2: 5001 to 10000
 - Level 3: < 5000 or **non exist words**
+```
 
 ## License
 ISC
 
 **Important**
+
 *The default word frequency data is generated from [English Lexicon Project](http://elexicon.wustl.edu/WordStart.asp), which is for non-commercial research purposes only and may not be used in the development of speech technology. You should consider using your own wordlist for other purpose.*
 
 ## Author
 [github/auphone](https://github.com/auphone)
+
 
 Good luck! σ`∀´)σ
