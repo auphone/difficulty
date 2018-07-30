@@ -6,7 +6,7 @@ describe("check word difficulty", () => {
     let checker: Checker;
     it("load csv", async () => {
         checker = new Checker(await Loader.loadCSV());
-        const level = checker.getLevel("a");
-        expect(level).gt(-1);
+        const level = checker.getLevel("shared");
+        expect(level).eq(1);
     });
 });

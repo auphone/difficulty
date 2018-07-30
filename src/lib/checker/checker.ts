@@ -10,8 +10,8 @@ export class Checker {
         let level = this.wordList.length - 1;
         this.wordList.forEach((levelWordList, index) => {
             if (levelWordList.indexOf(word) > -1) {
-                level = index;
-        }
+                level = index === 0 ? 0 : (this.wordList.length - index);
+            }
         });
         return level;
     }
